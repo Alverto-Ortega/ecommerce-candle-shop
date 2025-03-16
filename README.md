@@ -1,36 +1,54 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Candle E-Commerce Website (Advanced Version - Sanity Integration)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This is the advanced version of the candle eCommerce website, which extends the basic version by integrating **Sanity.io** for content management and **AI-powered features** to enhance user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Additional Features in This Branch
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Sanity.io CMS** for dynamic product and content management
+- **AI-powered scent quiz** for personalized candle recommendations
+- **AI-enhanced candle customization** allowing users to create unique candle blends
+- **AR Candle Preview** for an interactive shopping experience
+- **Advanced filtering and search functionality** powered by Sanity queries
+- **Enhanced state management** with Zustand or Redux
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Installation & Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository and switch to this branch:
+   ```bash
+   git clone -b sanity-integration https://github.com/your-username/candle-ecommerce.git
+   cd candle-ecommerce
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up Sanity CMS:
+   ```bash
+   cd sanity
+   sanity init
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Feel free to fork the repository, open issues, or submit pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
