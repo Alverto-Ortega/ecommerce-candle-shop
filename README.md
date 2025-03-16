@@ -1,36 +1,134 @@
+# Basic version
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+
+---
+# E-commerce Demo with Next.js
+
+This project is a demonstration of my e-commerce website built with Next.js with a heavy focus on the UI end using KendoReact, a react library. It showcases my skills as a Full Stack web developer with a specialization in Front-End development.
+
+## Project Goals
+
+* To create a portfolio piece that demonstrates proficiency in building modern web applications with Next.js.
+* To showcase the implementation of key e-commerce functionalities.
+* To prioritize accessibility and user experience.
+* To create a foundation for building e-commerce sites with options for different languages
+
+## Features
+
+* **Product Catalog:**
+    * Browse a selection of mock products.
+    * Product details pages.
+* **Shopping Cart:**
+    * Add items to the cart.
+    * View and manage cart contents.
+* **Checkout Flow:**
+    * Simulated checkout process using Stripe's test mode.
+    * Order confirmation (mock).
+* **Data Management (Optional):**
+    * Integration with Sanity (or similar) to demonstrate dynamic content management (see "Branches" below).
+* **Accessibility Focus:**
+    * Built with accessibility best practices in mind.
+
+## Technologies
+
+* Next.js
+* React
+* Stripe (test mode)
+* Sanity (optional, for content management)
+* (Add any other libraries or frameworks you use)
+
+## Branches
+
+* `main`: This branch contains the core Next.js project setup.
+* `local-data`: This branch features the e-commerce demo using local mock data (e.g., JSON files). This version is easy to run without any external dependencies.
+* `sanity-integration`: (Optional) This branch demonstrates integration with Sanity for content management. See setup instructions below.
 
 ## Getting Started
 
-First, run the development server:
+### Local Data Version
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone <repository-url>
+    ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2.  Navigate to the project directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ```bash
+    cd <project-directory>
+    ```
 
-## Learn More
+3.  Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  Run the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
 
-## Deploy on Vercel
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to view the demo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Sanity Integration (Optional)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Follow the steps above to clone and navigate to the project.
+2.  Checkout the `sanity-integration` branch:
+
+    ```bash
+    git checkout sanity-integration
+    ```
+
+3.  **Set up Sanity:**
+    * Create a Sanity account and project.
+    * Define the product schema (see `sanity.io` for documentation).
+    * Populate your Sanity dataset with data.
+4.  **Configure environment variables:**
+    * Create a `.env.local` file in the project root.
+    * Add your Sanity project ID, dataset, and API token:
+
+        ```
+        NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+        NEXT_PUBLIC_SANITY_DATASET=your-dataset
+        NEXT_PUBLIC_SANITY_API_VERSION=your-api-version
+        NEXT_PUBLIC_SANITY_TOKEN=your-token (if needed)
+        ```
+
+5.  Install dependencies and run the development server as described above.
+
+## Important Notes
+
+* This project uses Stripe in test mode. No real transactions are processed.
+* The `local-data` branch provides a simplified setup for quick viewing.
+* The `sanity-integration` branch showcases the use of a headless CMS for content management.
+
+## Demo
+
+A video demonstration of this project is available here: \[Link to your video demo]
+
+## Author
+
+\[Alverto Ortega-Garcia]
+
+## Contact
+
+\[Your preferred contact method, e.g., email, LinkedIn]
+
+## License
+
+\[Choose a license, e.g., MIT License]
+
+---
