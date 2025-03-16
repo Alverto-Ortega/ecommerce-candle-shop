@@ -41,7 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # personal project notes
-documentation.txt
+documentation.md
 changes.txt
 KendoReact-free-components.txt
 todo.txt

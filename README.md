@@ -40,6 +40,21 @@ This is the advanced version of the candle eCommerce website, which extends the 
    npm run dev
    ```
 
+## Requirements
+
+- A Stripe account (sign up at https://stripe.com).
+- API keys from your Stripe account for testing or live payments.
+
+## Setup
+
+1. Create a Stripe account and obtain your API keys (Test or Live).
+2. Set the following environment variables:
+   - `STRIPE_SECRET_KEY`: Your secret key.
+   - `STRIPE_PUBLIC_KEY`: Your public key.
+3. Follow the steps in `config/stripe.js` to integrate your keys.
+
+Test payments can be processed using the provided test keys from Stripe.
+
 ---
 
 ## Contribution
