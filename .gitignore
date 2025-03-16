@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# personal project notes
+documentation.txt
+changes.txt
+KendoReact-free-components.txt
+todo.txt
